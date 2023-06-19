@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        .card {
+            border: 1px solid gray;
+            display: flex;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+            border-radius: 5px;
+            aspect-ratio: 3/2;
+            object-fit: cover;
+        }
+
+        .card .txt {
+            padding: 10px;
+            margin: auto;
+        }
+
+        .pic{
+            width: 100%;
+        }
+
+
+        @media screen and (min-width:768px) {
+            .card {
+                display: block;
+            }
+
+        }
+
+        @media screen and (min-width:1024px) {
+            .card {
+                display: block;
+            }
+
+        }
+
+        @media screen and (min-width:1200px) {
+            .card {
+                display: flex;
+
+            }
+            .row :nth-child(1) .img {
+                width: 100%;
+            }
+            .row :nth-child(2) .card {
+                display: block;
+            }
+
+            .row :nth-child(3) .card {
+                display: block;
+            }
+
+            .row :nth-child(4) .card {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3 col-xl-12">
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200/?random=10">
+                    </div>
+                    <div class="txt">
+                        <h3>title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nemo quae consectetur
+                            alias reprehenderit laudantium quam quidem rerum amet, quibusdam voluptas nam, aspernatur
+                            possimus cum magni sunt ea illum minus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 col-xl-4">
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200/?random=10">
+                    </div>
+                    <div class="txt">
+                        <h3>title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nemo quae consectetur
+                            alias reprehenderit laudantium quam quidem rerum amet, quibusdam voluptas nam, aspernatur
+                            possimus cum magni sunt ea illum minus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 col-xl-4">
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200/?random=10">
+                    </div>
+                    <div class="txt">
+                        <h3>title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nemo quae consectetur
+                            alias reprehenderit laudantium quam quidem rerum amet, quibusdam voluptas nam, aspernatur
+                            possimus cum magni sunt ea illum minus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 col-xl-4">
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200/?random=10">
+                    </div>
+                    <div class="txt">
+                        <h3>title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nemo quae consectetur
+                            alias reprehenderit laudantium quam quidem rerum amet, quibusdam voluptas nam, aspernatur
+                            possimus cum magni sunt ea illum minus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 col-xl-6">
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200/?random=10">
+                    </div>
+                    <div class="txt">
+                        <h3>title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nemo quae consectetur
+                            alias reprehenderit laudantium quam quidem rerum amet, quibusdam voluptas nam, aspernatur
+                            possimus cum magni sunt ea illum minus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 col-xl-6">
+                <div class="card">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200/?random=10">
+                    </div>
+                    <div class="txt">
+                        <h3>title</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nemo quae consectetur
+                            alias reprehenderit laudantium quam quidem rerum amet, quibusdam voluptas nam, aspernatur
+                            possimus cum magni sunt ea illum minus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
