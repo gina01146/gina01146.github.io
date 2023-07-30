@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Little Mary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        i {
+            font-size: 30px;
+        }
+
+        [box-id] {
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            transition: .3s;
+        }
+
+        [box-id].active {
+            border: solid 3px #888888;
+            box-shadow: 0 0 30px #888888;
+            transition: 0s;
+            border-radius: 20px;
+        }
+
+        #msg {
+            font-size: 36px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        
+        <!-- 1 row -->
+        <div class="row">
+            <div box-id="1" class="col-1"></div>
+            <div box-id="2" class="col-1"></div>
+            <div box-id="3" class="col-1"></div>
+            <div box-id="4" class="col-1"></div>
+            <div box-id="5" class="col-1"></div>
+            <div box-id="6" class="col-1"></div>
+            <div box-id="7" class="col-1"></div>
+            <div box-id="8" class="col-1"></div>
+            <div box-id="9" class="col-1"></div>
+            <div box-id="10" class="col-1"></div>
+            <div box-id="11" class="col-1"></div>
+            <div box-id="12" class="col-1"></div>
+        </div>
+        <div class="row">
+            <div box-id="32" class="col-1"></div>
+            <div class="col-10">
+                <h1 class="text-center">在小小的手機裡面滑阿滑阿滑</h1>
+            </div>
+            <div box-id="13" class="col-1"></div>
+        </div>
+        <div class="row">
+            <div box-id="31" class="col-1"></div>
+            <div class="col-10">
+                <p id="msg"></p>
+            </div>
+            <div box-id="14" class="col-1"></div>
+        </div>
+        <div class="row">
+            <div box-id="30" class="col-1"></div>
+            <div class="col-10 text-center">
+                <button class=" btn btn-primary">Start~~</button>
+            </div>
+            <div box-id="15" class="col-1"></div>
+        </div>
+        <div class="row">
+            <div box-id="29" class="col-1"></div>
+            <div class="col-10"></div>
+            <div box-id="16" class="col-1"></div>
+        </div>
+        <div class="row">
+            <div box-id="28" class="col-1"></div>
+            <div box-id="27" class="col-1"></div>
+            <div box-id="26" class="col-1"></div>
+            <div box-id="25" class="col-1"></div>
+            <div box-id="24" class="col-1"></div>
+            <div box-id="23" class="col-1"></div>
+            <div box-id="22" class="col-1"></div>
+            <div box-id="21" class="col-1"></div>
+            <div box-id="20" class="col-1"></div>
+            <div box-id="19" class="col-1"></div>
+            <div box-id="18" class="col-1"></div>
+            <div box-id="17" class="col-1"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const brickData = [
+            {
+                id: '1',
+                color: '#0066FF',
+                icon: 'fa-brands fa-twitter',
+                target: function () {
+                    return 'Twitter'
+                }
+            },
+            {
+                id: '2',
+                color: 'red',
+                icon: 'fa-brands fa-youtube',
+                target: function () {
+                    return 'Youtube'
+                }
+            },
+            {
+                id: '3',
+                color: '#9955FF',
+                icon: 'fa-brands fa-discord',
+                target: function () {
+                    return 'Discord'
+                }
+            },
+            {
+                id: '4',
+                color: '#000000',
+                icon: 'fa-brands fa-tiktok',
+                target: function () {
+                    return 'Tiktok'
+                }
+            },
+            {
+                id: '5',
+                color: '#0000CC',
+                icon: 'fa-brands fa-facebook',
+                target: function () {
+                    return 'Facebook'
+                }
+            },
+            {
+                id: '6',
+                color: '#FF1493',
+                icon: 'fa-brands fa-instagram',
+                target: function () {
+                    return 'Instagram'
+                }
+            },
+            {
+                id: '7',
+                color: '#3CB371',
+                icon: 'fa-brands fa-line',
+                target: function () {
+                    return 'Line'
+                }
+            },
+            {
+                id: '8',
+                color: '#8A2BE2',
+                icon: 'fa-solid fa-podcast',
+                target: function () {
+                    return 'Podcast'
+                }
+            },
+            {
+                id: '9',
+                color: '#FFAA33',
+                icon: 'fa-brands fa-amazon',
+                target: function () {
+                    return 'Amazon'
+                }
+            },
+            {
+                id: '10',
+                color: '#0066FF',
+                icon: 'fa-brands fa-twitter',
+                target: function () {
+                    return 'Twitter'
+                }
+            },
+            {
+                id: '11',
+                color: 'red',
+                icon: 'fa-brands fa-youtube',
+                target: function () {
+                    return 'Youtube'
+                }
+            },
+            {
+                id: '12',
+                color: '#9955FF',
+                icon: 'fa-brands fa-discord',
+                target: function () {
+                    return 'Discord'
+                }
+            },
+            {
+                id: '13',
+                color: '#000000',
+                icon: 'fa-brands fa-tiktok',
+                target: function () {
+                    return 'Tiktok'
+                }
+            },
+            {
+                id: '14',
+                color: '#0000CC',
+                icon: 'fa-brands fa-facebook',
+                target: function () {
+                    return 'Facebook'
+                }
+            },
+            {
+                id: '15',
+                color: '#FF1493',
+                icon: 'fa-brands fa-instagram',
+                target: function () {
+                    return 'Instagram'
+                }
+            },
+            {
+                id: '16',
+                color: '#3CB371',
+                icon: 'fa-brands fa-line',
+                target: function () {
+                    return 'Line'
+                }
+            },
+            {
+                id: '17',
+                color: '#8A2BE2',
+                icon: 'fa-solid fa-podcast',
+                target: function () {
+                    return 'Podcast'
+                }
+            },
+            {
+                id: '18',
+                color: '#FFAA33',
+                icon: 'fa-brands fa-amazon',
+                target: function () {
+                    return 'Amazon'
+                }
+            },
+            {
+                id: '19',
+                color: '#0066FF',
+                icon: 'fa-brands fa-twitter',
+                target: function () {
+                    return 'Twitter'
+                }
+            },
+            {
+                id: '20',
+                color: 'red',
+                icon: 'fa-brands fa-youtube',
+                target: function () {
+                    return 'Youtube'
+                }
+            },
+            {
+                id: '21',
+                color: '#9955FF',
+                icon: 'fa-brands fa-discord',
+                target: function () {
+                    return 'Discord'
+                }
+            },
+            {
+                id: '22',
+                color: '#000000',
+                icon: 'fa-brands fa-tiktok',
+                target: function () {
+                    return 'Tiktok'
+                }
+            },
+            {
+                id: '23',
+                color: '#0000CC',
+                icon: 'fa-brands fa-facebook',
+                target: function () {
+                    return 'Facebook'
+                }
+            },
+            {
+                id: '24',
+                color: '#FF1493',
+                icon: 'fa-brands fa-instagram',
+                target: function () {
+                    return 'Instagram'
+                }
+            },
+            {
+                id: '25',
+                color: '#3CB371',
+                icon: 'fa-brands fa-line',
+                target: function () {
+                    return 'Line'
+                }
+            },
+            {
+                id: '26',
+                color: '#8A2BE2',
+                icon: 'fa-solid fa-podcast',
+                target: function () {
+                    return 'Podcast'
+                }
+            },
+            {
+                id: '27',
+                color: '#FFAA33',
+                icon: 'fa-brands fa-amazon',
+                target: function () {
+                    return 'Amazon'
+                }
+            },
+            {
+                id: '28',
+                color: '#0066FF',
+                icon: 'fa-brands fa-twitter',
+                target: function () {
+                    return 'Twitter'
+                }
+            },
+            {
+                id: '29',
+                color: 'red',
+                icon: 'fa-brands fa-youtube',
+                target: function () {
+                    return 'Youtube'
+                }
+            },
+            {
+                id: '30',
+                color: '#9955FF',
+                icon: 'fa-brands fa-discord',
+                target: function () {
+                    return 'Discord'
+                }
+            },
+            {
+                id: '31',
+                color: '#000000',
+                icon: 'fa-brands fa-tiktok',
+                target: function () {
+                    return 'Tiktok'
+                }
+            },
+            {
+                id: '32',
+                color: '#0000CC',
+                icon: 'fa-brands fa-facebook',
+                target: function () {
+                    return 'Facebook'
+                }
+            } 
+        ]
+
+        //宣告全域變數
+        let bricks
+        //剩餘的步數
+        let steps = 0
+        //全部的步數 
+        let allSteps = 0
+        //目前走到哪一格
+        let currentIndex = 0
+        //速率(越大代表越慢)
+        let speed
+
+        window.onload = function () {
+            createBricks()
+
+            //Start Button
+            document.querySelector('button').addEventListener('click', function () {
+                speed = 30
+                //Math.random會取 0 ~ 31 之間的數取完再+1給random(1~32之間)
+                let random = Math.floor(Math.random() * brickData.length) + 1
+                //console.log(random)
+                //為了多跑幾圈再走到獎項
+                steps = random + (3 * bricks.length)
+                allSteps = steps
+                turnAround()
+            })
+        }
+
+
+        function createBricks() {
+            bricks = document.querySelectorAll('[box-id]')
+            bricks = Array.from(bricks).sort((a, b) => {
+                //抓到的box DOM物件依照box-id排序
+                return a.getAttributeNode('box-id').value - b.getAttributeNode('box-id').value
+            })
+            console.log(bricks)
+            bricks.forEach((x, index) => {
+                let id = index + 1
+                let data = brickData.find(x => x.id == id)
+                let icon = document.createElement('i')
+                icon.setAttribute('class', data.icon)
+                icon.style.color = data.color
+                x.appendChild(icon)
+            })
+        }
+
+        function turnAround() {
+            //去掉上一圈的紀錄
+            bricks[currentIndex].classList.remove('active')
+            currentIndex++
+
+            if (currentIndex >= bricks.length) { currentIndex = 0 }
+
+            bricks[currentIndex].classList.add('active')
+            steps--
+
+            //一般版本:
+            // if( steps > 0){
+            //     setTimeout(turnAround,speed)
+            // }else{
+            //     // 跑完了
+            //     let msgBox = document.getElementById('msg')
+            //     let val = brickData[currentIndex].target()
+            //     msgBox.innerText = `接下來的30分鐘${val}`
+            // }
+
+            //變速版本:
+            if (steps > 0) {
+                setTimeout(turnAround, speed)
+                // 當剩下1/3時減速
+                if (steps < Math.floor((allSteps / 3))) { speed += 7 }
+            } else {
+                //  跑完了
+                let msgBox = document.getElementById('msg')
+                let val = brickData[currentIndex].target()
+                msgBox.innerText = `就是你了${val}`
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
