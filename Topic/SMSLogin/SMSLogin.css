@@ -1,0 +1,135 @@
+body{
+    font: normal normal 12px Verdana,Arial,'新微軟正黑體',Helvetica,sans-serif;
+}
+.logo-wrapper{
+    margin: 0 150px;
+    padding: 24px 0 16px;
+}
+.form_information{
+    width: 100%;
+    padding: 80px 0px 50px;
+    margin: auto;
+    max-width: 375px;
+}
+h1{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 25px;
+    border-left: 6px solid #FB6184;
+}
+.mobile{
+    padding-bottom: 30px;
+}
+.mobile .input-wrap {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+.mobile h3, .verifyCode h3{
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.mobile .mobilenum{
+    font-size: 16px;
+    padding: 10px 16px;
+    border: 1px solid #BFC1C5;
+    border-radius: 4px;
+    width: 65%;
+}
+.mobile button{
+    font-size: 16px;
+    color: #FDA5B9;
+    border: solid 1px #FDA5B9;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+.col-auto{
+    display: inline;
+}
+.verifyCode{
+    padding-bottom: 30px;
+}
+
+.verifyCode .verifyCodenum{
+    font-size: 16px;
+    padding: 10px 16px;
+    border: 1px solid #BFC1C5;
+    border-radius: 4px;
+    
+}
+.login button{
+    font-size: 16px;
+    background-color: #FDA5B9;
+    border: #FDA5B9;
+    color:white;
+    padding: 10px 16px;
+}
+.link{
+    padding-bottom: 30px;
+}
+.link a{
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+
+.or .hr{
+    font-size: 13px;
+    color: #80858C;
+    position: relative;
+}
+.or .hr span{
+    display: inline-block;
+    padding: 0 16px;
+    background: #fff;
+    position: relative;
+}
+.or .hr::before{
+    content: "";
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.third_party-inbox{
+    padding-top: 30px;
+}
+.third_party-inbox a{
+    padding: 0 15px;
+}
+.third_party-inbox img{
+    border: 1px solid;
+    color: #d9d9d9;
+
+}
+.third_party-href img{
+    width: 40px;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    color: #6596ff;
+    text-decoration: none;
+}
+.has-account{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 32px;
+}

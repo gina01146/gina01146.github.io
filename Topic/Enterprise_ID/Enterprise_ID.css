@@ -1,0 +1,134 @@
+body{
+    font: normal normal 12px Verdana,Arial,'新微軟正黑體',Helvetica,sans-serif;
+}
+.logo-wrapper{
+    margin: 0 150px;
+    padding: 24px 0 16px;
+}
+.form_information{
+    width: 100%;
+    padding: 80px 0px 50px;
+    margin: auto;
+    max-width: 630px;
+}
+h1{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 25px;
+}
+p.title_description {
+    color: #6A7079;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+h3, .mobile h3{
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.form-list input, .form-select{
+    height: 36px;
+    font-size: 15px;
+    padding-left: 10px;
+    border-style: none;
+    border: 1px solid #FDA5B9;
+    border-radius: 4px;
+}
+input:focus {
+    outline: none;
+}
+.form-select:focus {
+    outline: none;
+    border: solid 1px #FDA5B9;
+    box-shadow: none;
+}
+.mobile input{
+   width: 78%;
+}
+@media (max-width: 768px) {
+    .mobile input {
+        width: 60%;
+    }
+}
+.mobile button{
+    font-size: 16px;
+    color: white;
+    border: solid 1px #FDA5B9;
+    background-color: #FDA5B9;
+    padding: 6px 20px;
+    border-radius: 4px;
+    float: right;
+}
+
+.checkbox {
+    display: table;
+    margin-top: 25px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding: 7px 10px;
+    width: 100%;
+}
+.checkbox input[type=checkbox] {
+    margin: 0 3px 0 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background: #fff;
+}
+.checkbox p {
+    padding-left: 0;
+    line-height: 1.5;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.col-auto{
+    display: inline;
+}
+.form-check  {
+    display: table;
+    margin-top: 25px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding: 7px 10px;
+    width: 100%;
+}
+.nextstep button{
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 10px 0;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    color: #fff;
+    background: #FA1E50;
+    border: solid 1px #FA1E50;
+}
+.href-box{
+    font-size: 14px;
+}
+.account a{
+    color: #2B3340;
+    text-decoration:underline;
+}
+.compilation:hover {
+    color: #2B3340; 
+    text-decoration: underline; 
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    color: #6596ff;
+    text-decoration: none;
+}

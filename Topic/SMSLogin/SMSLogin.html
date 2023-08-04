@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>求職登入</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="SMSLogin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="header_pc">
+                    <div id="header">
+                        <div class="logo-wrapper">
+                            <a class="logo" href="https://www.518.com.tw" title="">
+                                <img src="../img/logo_518b_slogan.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="form_information">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="title">求職快速註冊 (原518人力銀行)</h1>
+                <form class="from-list">
+                    <div class="mobile">
+                        <h3 class="text mb-0">手機號碼</h3>
+                        <div class="col-auto">
+                            <input type="mobile" class="mobilenum" id="" placeholder="例 : 0988123456" maxlength="10">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="sendverifyCode">發送簡訊驗證</button>
+                        </div>
+                    </div>
+                    <div class="verifyCode">
+                        <h3 class="text mb-0">驗證碼</h3>
+                        <input type="text" class="verifyCodenum w-100" placeholder="請輸入四位簡訊驗證碼">
+                    </div>
+                    <div class="login pb-3">
+                        <button type="submit" class="rounded w-100 disable">登入</button>
+                    </div>
+                    <div class="link text-center">
+                        <a href="https://www.518.com.tw/mobile-verify.html?type=2&backUrl=">快速註冊</a>
+                        <a href="https://www.518.com.tw/mobile-verify.html?type=1&backUrl=">簡訊登入</a>
+                    </div>
+                    <div class="or">
+                        <p class="hr text-center"><span>或</span></p>
+                    </div>
+                    <div class="third_party-inbox text-center">
+                        <a class="third_party-href apple"
+                            href="https://appleid.apple.com/auth/authorize?response_type=code%20id_token&amp;response_mode=form_post&amp;client_id=com.518.apple.signIn&amp;redirect_uri=https%3A%2F%2Fwww.518.com.tw%2Fmember-login_apple_callback.html&amp;state=&amp;scope=name%20email">
+                            <img class="rounded-circle" src="../img/ic_login_apple.svg" alt="">
+                        </a>
+                        <a class="third_party-href fb"
+                            href="https://www.facebook.com/dialog/oauth?client_id=785331961603696&amp;redirect_uri=https%3A%2F%2Fwww.518.com.tw%2Fmember-login_fb_callback.html&amp;scope=public_profile,email&amp;response_type=code&amp;state=eyJyZWRpcmVjdF91cmkiOiJodHRwczpcL1wvd3d3LjUxOC5jb20udHdcL21lbWJlci1sb2dpbl9mYl9jYWxsYmFjay5odG1sIn0,">
+                            <img class="rounded-circle" src="../img/ic_login_fb.svg" alt="">
+                        </a>
+                        <a class="third_party-href google"
+                            href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=offline&amp;client_id=841028038005-p86526qi30168b63v7vm43a80vieh35b.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fwww.518.com.tw%2Fmember-login_google_callback.html&amp;state=eyJiYWNrVXJsIjoiaHR0cHM6XC9cL3d3dy41MTguY29tLnR3XC8_dGFsZW50X2xvZ2luX3R5cGU9NCIsImV4ZWN1dGVBY3Rpb24iOiJsb2dpbiJ9&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;approval_prompt=auto&amp;include_granted_scopes=true">
+                            <img class="rounded-circle" src="../img/ic_login_google.svg" alt="">
+                        </a>
+                    </div>
+                </form>
+            </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
