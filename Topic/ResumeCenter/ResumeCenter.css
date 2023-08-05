@@ -1,0 +1,429 @@
+/* .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+body{
+    font-family: Arial,"新微軟正黑體",Helvetica,Meiryo,Microsoft JhengHei,"微軟正黑體",sans-serif;
+    
+}
+/* 履歷列表 */
+.pageTitle{
+    font-size: 30px;
+    font-weight: bold;
+    color: #2B3340;
+    margin-bottom: 16px;
+}
+.resumeList {
+    border: 1px solid #E9EAEB;
+    border-radius: 4px;
+    padding: 48px 56px 80px 48px;
+}
+.title h2{
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-left: 8px;
+    border-left: 6px solid #FB6184;
+    color: #2B3340;
+    display: inline-flex;
+    align-items: flex-end;
+}
+.title h2 span{
+    color: #80858C;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: initial;
+    padding-left: 4px;
+}
+.resumeList .resumeChick{
+    color: #FA1E50;
+    background: #FFF;
+    border: 1px solid #FA3461;
+}
+.resumeList .resumeChick i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+}
+.resumeList .btn_content button:nth-of-type(1) i{
+    background: url(../img/addChickpt.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.resumeChick,.resumeNew{
+    min-width: 152px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 16px;
+}
+.resumeList .resumeNew{
+    color: #fff;
+    background: #FA1E50;
+    border: 1px solid #FA3461; 
+}
+.resumeList .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    margin-bottom: 25px;
+}
+/* 圖片下方沒對齊 */
+.resumeCard{
+    vertical-align: baseline;
+}
+
+.resumeCard .resumeCard_content{
+    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resumeCard .resumeCard_contentName{
+    display: flex;
+    align-items: center;
+}
+.resumeCard .resumeCard_contentLabel{
+    white-space: nowrap;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    background-color: #555C66;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+.resumeCard .resumeCard_contentResume{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2B3340;
+    padding-top: 3px;  
+}
+.resumeCard .card-body:hover .resumeCard_contentResume{
+    color: #2369FF;
+}
+.resumeCard .list-menu-btn{
+    border: none;
+    background-color: transparent;
+}
+.resumeCard .list-menu-btn:hover{
+    background-color: 	#F5F5F5;
+}
+.resumeCard .list-menu-btn::before{
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/ic_more_24.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.resumeCard .card-text_content{
+    font-size: 14px;
+    color: #6A7079;
+    margin-top: 8px;
+    padding-bottom: 40px;
+}
+.resumeCard .card-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.resumeCard .grade_star{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/img_resumeStar_default.svg);
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.resumeCard .card-text-date{
+    text-align: right;
+    font-size: 13px;
+    color: #95999F;
+}
+.resumeCard .resumeCard_contentBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resumeCard{
+    box-shadow: 0 2px 4px 0 rgba(11, 59, 108, 0.05), 
+    0 4px 8px 0 rgba(11, 59, 108, 0.05);
+}
+.resumeCard:hover{
+    box-shadow: 0 4px 8px 0 rgba(11, 59, 108, 0.05), 
+    0 8px 16px 0 rgba(11, 59, 108, 0.05);
+}
+
+/* 履歷設定 */
+.settingresume{
+    border: 1px solid #E9EAEB;
+    border-radius: 4px;
+    padding: 48px 56px 80px 48px;
+    margin-top: 20px;
+}
+.settingresume .settingGroup_title{
+    font-size: 16px;
+    color: #6A7079;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-right: 32px;
+}
+/* .settingresume{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+} */
+.settingresume .settingGroup{
+    display: inline-flex;
+    margin-bottom: 32px;
+}
+
+.settingresume .radio-label{
+    margin-right: 30px;
+}
+.settingresume .settingGroup_itemExtend{
+    padding: 16px 24px;
+    border-radius: 4px;
+    background: #F2F5F9;
+    margin-top: 8px;
+}
+.settingresume .settingGroup_itemExtend p{
+    margin-bottom: 8px;
+}
+.settingresume .settingGroup_itemExtend:hover label{
+    color: #2369FF;
+}
+.settingresume .settingGroup_itemForm_list p:hover {
+    color: #2369FF;
+}
+.settingresume .setting_itemFormInput{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+.settingresume input[type=text]{
+    border-radius: 4px;
+    border: 1px solid #BFC1C5;
+    outline: none;
+    width: 80%;
+    padding: 10px 16px;
+}
+.settingresume .setting_itemFormNum{
+    margin-right: 8px;
+}
+.settingresume .setting_itemFormDelect{
+    margin-left: 16px;
+    align-items: center;
+    font-size: 16px;
+    color: #FB6184;
+    align-items: center;    
+    display: inline-flex;
+}
+.settingresume .setting_itemFormDelect::before{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/ic_trash.svg);
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.settingresume .setting_itemFormDelect:hover{
+    opacity: .8;
+}
+.settingresume .setting_itemFormLink{
+    font-size: 16px;
+    color: #2369FF;
+    margin-top: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+.settingresume .setting_itemFormLink::before{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/ic_add.svg);
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.settingresume .save{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.settingresume button{
+    font-size: 18px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: #fff;
+    background: #FA1E50;
+    border: solid 1px #FA1E50;
+}
+.settingresume button:hover{
+    opacity: .8;
+}
+
+a{  
+    text-decoration: none;
+}
+
+/* ---------------footer------------------ */
+footer {
+    padding: 44px 0 24px 0;
+    background: #404753;
+    color: #fff;
+    display: block
+}
+
+footer .footer-content {
+    justify-content: space-between;
+    color: #fff;
+}
+
+/* 上半 */
+footer .footer-top-content {
+    display: none;
+}
+
+
+
+/* 下半 */
+footer .footer-bottom-content {
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.6px;
+}
+
+footer .footer-bottom-content .footer-box p {
+    display: none;
+}
+
+footer .footer-box .logo-img {
+    position: relative;
+    top: 5px;
+    width: 120px;
+    height: initial;
+}
+
+.media-img {
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+}
+
+footer .footer-bottom-content .footer-bottom-top-wrap {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #7f7f7f;
+}
+
+/* 版權 */
+footer .footer-bottom-content .footer-end-wrap {
+    padding-left: 10px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 8px;
+}
+
+
+/* --- 電腦版 --- */
+@media (min-width: 992px) {
+    footer {
+        padding: 64px 0;
+    }
+
+    /* 上半 */
+    footer .footer-top-content {
+        display: flex;
+    }
+
+    footer .footer-top-content .href-wrap {
+        justify-content: space-between;
+    }
+
+    footer .qrcode-img {
+        width: 100px;
+        height: 100px;
+        margin-right: 24px;
+    }
+
+    /* 連結清單 */
+    footer .footer-box {
+        display: flex;
+        align-items: center;
+    }
+
+    footer .footer-top-content .href-box {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    footer .footer-top-content .href-box .title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.22;
+        padding-bottom: 16px;
+    }
+
+    footer .footer-top-content .href-box a {
+        padding: 4px 0;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* 下半 */
+    footer .footer-bottom-content {
+        padding-top: 100px;
+    }
+
+    footer .footer-bottom-content .footer-box p {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+        margin-left: 20px;
+        margin-bottom: -10px;
+    }
+
+    footer .footer-box .logo-img {
+        width: 160px;
+    }
+
+    .media-img {
+        margin-left: 14px;
+    }
+
+    /* 版權 */
+    footer .footer-bottom-content .footer-end-wrap {
+        padding-left: 0;
+        padding-top: 24px;
+        align-items: end;
+        font-size: 13px;
+    }
+
+    footer .text-content {
+        display: flex;
+    }
+}

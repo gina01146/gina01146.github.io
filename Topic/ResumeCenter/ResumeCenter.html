@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>履歷管理中心</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="ResumeCenter.css">
+</head>
+
+<body>
+    <section class="pageHead">
+        <div class="container">
+            <div class="row">
+                <!-- 麵包屑 -->
+                <div class="breadcrumd"></div>
+                <h1 class="pageTitle">履歷管理中心</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- 履歷列表 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="resumeList">
+                    <!-- 表頭 -->
+                    <div class="col-12 title">
+                        <h2 class="mb-0">履歷列表
+                            <span class="title_num">共幾份</span>
+                        </h2>
+                        <div class="btn_content">
+                            <!-- todo小訊息+彈出框 -->
+                            <button class="resumeChick" id="resumeChickptAdd"><i></i>匯入小雞履歷</button>
+                            <button class="resumeNew" id="resumeAdd">新增履歷</button>
+                        </div>
+                    </div>
+
+                    <!-- 求職履歷卡 -->
+                    <div class="resumeCard col-lg-12 col-xl-6">
+                        <div class="card">
+                            <div class="row g-0">
+                                <!-- 大頭照 -->
+                                <div class="col-md-4">
+                                    <img src="../img/resumeCardBanner.svg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <a href="#">
+                                        <div class="card-body">
+                                            <div class="resumeCard_content">
+                                                <div class="resumeCard_contentName">
+                                                    <span class="resumeCard_contentLabel">預設</span>
+                                                    <span class="resumeCard_contentResume">求職履歷</span>
+                                                </div>
+                                                <div class="list-menu-box">
+                                                    <!-- todo點下彈出更多履歷顯示視窗 -->
+                                                    <button class="list-menu-btn"></button>
+                                                    <div class="list-menu-list" style="display: none">
+                                                        <div class="button-group">
+                                                            <button class="preview">預覽</button>
+                                                            <button class="download">下載</button>
+                                                            <button class="resumeDefault">設為預設</button>
+                                                            <button class="rename">更改名稱</button>
+                                                        </div>
+                                                        <div class="button-group">
+                                                            <button class="print">列印</button>
+                                                            <button class="cloudPrint">超商列印</button>
+                                                        </div>
+                                                        <button class="resumeDelete">刪除</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-text">
+                                                <!-- todo 距離完美履歷差一點點了，第{}顆星等你挑戰！-->
+                                                <p class="card-text_content">距離完美履歷差一點點了，第{}顆星等你挑戰！</p>
+                                                <div class="resumeCard_contentBottom">
+                                                    <div class="resumeGrade">
+                                                        <span class="grade_star"></span>
+                                                        <span class="grade_star"></span>
+                                                        <span class="grade_star"></span>
+                                                    </div>
+                                                    <div class="card-text-date">
+                                                        <!-- todo 更新日期 -->
+                                                        <p class="mb-0"><small
+                                                                class="text-body-secondary"></small>2023-00-00更新</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- 履歷設定 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="settingresume">
+                    <div class="col-12 title">
+                        <h2 class="mb-0">履歷設定</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 settingGroup">
+                            <div class="settingGroup_title">履歷開關設定</div>
+                            <div class="settingGroup_item w-100">
+                                <div class="settingGroup_itemForm">
+                                    <!-- 按下開啟取消 關閉後，可以選擇是否繼續享有以下服務～ -->
+                                    <label class="radio-label">
+                                        <input type="radio" name="resume_status" value="1">
+                                        <i class="radio-icon"></i>開啓
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="resume_status" value="2" checked>
+                                        <i class="radio-icon"></i>關閉
+                                    </label>
+                                </div>
+                                <div class="settingGroup_itemExtend">
+                                    <p>關閉後，可以選擇是否繼續享有以下服務~</p>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="potential" id="potential" checked>
+                                        <i class="checkbox-icon"></i>主動幫我推薦給企業（隱藏聯絡資料）
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 settingGroup">
+                            <div class="settingGroup_title">配對信件設定</div>
+                            <div class="settingGroup_item">
+                                <div class="settingGroup_itemText">
+                                    <a href="#" target="_blank">前往設定 > </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- todo mbti性格測驗 -->
+                        <div class="col-12 settingGroup">
+                            <div class="settingGroup_title">性格測驗設定</div>
+                            <div class="settingGroup_item">
+                                <div class="settingGroup_itemText"> 因為尚無職場性格測驗結果，無法進行設定。
+                                    <a href="#" target="_blank">立即測驗</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 settingGroup w-100">
+                            <div class="settingGroup_title">產業隱藏設定</div>
+                            <div class="settingGroup_item">
+                                <div class="settingGroup_itemForm_list">
+                                    <p class="is-checkbox-label">
+                                        <input type="checkbox" name="hidden_industry" value="1" checked>
+                                        <i class="checkbox-icon"></i>對「保險產業」隱藏 </p>
+                                    <p class="is-checkbox-label">
+                                        <input type="checkbox" name="hidden_industry" value="2" checked>
+                                        <i class="checkbox-icon"></i>對「傳銷產業」隱藏 </p>
+                                    <p class="is-checkbox-label">
+                                        <input type="checkbox" name="hidden_industry" value="3" checked>
+                                        <i class="checkbox-icon"></i>對「殯葬產業」隱藏 </p>
+                                    <p class="is-checkbox-label">
+                                        <input type="checkbox" name="hidden_industry" value="4">
+                                        <i class="checkbox-icon"></i>對「派遣產業」隱藏 </p>
+                                    <p class="is-checkbox-label">
+                                        <input type="checkbox" name="hidden_industry" value="5">
+                                        <i class="checkbox-icon"></i>對「傳播媒體經紀業」隱藏</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 settingGroup">
+                            <div class="settingGroup_title">公司隱藏設定</div>
+                            <div class="setting_item w-100">
+                                <div class="setting_itemText">針對特定公司隱藏您的履歷，上限 6 筆。 </div>
+                                <div id="hiddenCompList" class="setting_itemForm">
+                                    <div class="setting_itemFormInput">
+                                        <span class="setting_itemFormNum">1.</span>
+                                        <!-- todo跳出視窗 -->
+                                        <input type="text" name="" readonly="">
+                                        <input type="hidden" name="" value="14101">
+                                        <a class="setting_itemFormDelect">刪除</a>
+                                    </div>
+                                </div>
+                                <!-- todo跳出視窗 -->
+                                <a class="setting_itemFormLink addHidden">新增隱藏公司</a>
+                            </div>
+                        </div>
+                        <div class="save">
+                            <button>儲存履歷設定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row footer-top-content  footer-content">
+                <div class=" footer-box logo-box col-6">
+
+                    <img class="qrcode-img" src="../img/ic_q_rcode.jpg" alt="qr-code">
+                    <div class="app-inbox">
+                        <h5 class="title">666蛤班<br>官方LINE</h5>
+
+                    </div>
+                </div>
+                <div class="href-wrap footer-box col-6">
+                    <div class="href-box">
+                        <h6 class="title">關於我們</h6>
+                        <a href="#">蛤班簡介</a>
+                        <a href="#">徵才方案</a>
+                        <a href="#">加入我們</a>
+                        <a href="#">網站地圖</a>
+                    </div>
+                    <div class="href-box">
+                        <h6 class="title">服務專區</h6>
+                        <a href="#" target="_blank">地區找工作</a>
+                        <a href="#" target="_blank">產業找工作</a>
+                        <a href="#" target="_blank">職務找工作</a>
+                        <a href="#" target="_blank">幫助中心</a>
+                    </div>
+                    <div class="href-box">
+                        <h6 class="title">會員條款</h6>
+                        <a href="#">刊登契約</a>
+                        <a href="#">免責聲明</a>
+                        <a href="#">服務條款</a>
+                        <a href="#">隱私權聲明</a>
+                    </div>
+                    <div class="href-box">
+                        <h6 class="title">合作專區</h6>
+                        <a href="#">廣告合作</a>
+                        <a href="#">申訴專線</a>
+                        <a href="#">網站公告</a>
+                        <a href="#">投資者專區 </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-content">
+                <div class="footer-bottom-top-wrap">
+                    <div class="row footer-content">
+                        <div class="footer-box col-lg-8   col-6">
+                            <a href="#"><img class="logo-img" src="../img/logo_666_b_white.png" alt="蛤班 logo"></a>
+                            <p class="slogan">下班店長請指示</p>
+                        </div>
+                        <div class="footer-box justify-content-end col-lg-4 col-6">
+                            <a href="#" target="_blank">
+                                <img class="media-img" src="../img/ic_ig.svg" alt="蛤班 IG">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img class="media-img" src="../img/ic_fb.svg" alt="蛤班 FB">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img class="media-img" src="../img/ic_youtube.svg" alt="蛤班 Youtube">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-end-wrap">
+                    <div class="copyright">
+                        <p>© 2023 by HaBan Technology Co., Ltd. All Rights Reserved.</p>
+                    </div>
+                    <div class="text-content">
+                        <p class="is-pc me-4">
+                            客服專線：00-0000-0000
+                        </p>
+                        <p>機構地址 台北市大安區忠孝東路三段xx號xx號樓之x</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
