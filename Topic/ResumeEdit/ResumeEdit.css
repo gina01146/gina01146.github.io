@@ -1,0 +1,672 @@
+body {
+    font-family: Arial, "新微軟正黑體", Helvetica, Meiryo, Microsoft JhengHei, "微軟正黑體", sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* 麵包屑 */
+.breadcrumb,
+.breadcrumb li a {
+    color: #232A35;
+    font-size: 11px;
+}
+
+.dropdown-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu .dropdown-item span {
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.member-list .dropdown-menu img {
+    width: 18px;
+    height: 18px;
+}
+
+/* body */
+/* 個人基本資料 */
+.aside-row {
+    display: flex;
+    margin-bottom: 140px;
+}
+
+.resume-aside {
+    border: 1px solid #E9EAEB;
+    background: white;
+    border-radius: 4px;
+    padding-bottom: 64px;
+    margin-right: 15px;
+}
+
+.resume-aside .resume-title-wrap {
+    background: #FAFBFD;
+    border-bottom: 1px solid #E9EAEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+.resume-aside .resume-title-wrap .edit-btn {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/ic_edit.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: 4px;
+}
+
+.resume-aside .resume-title-wrap .resume-title {
+    display: flex;
+    align-items: center;
+    color: #2B3340;
+}
+
+.resume-aside .resume-title-wrap .resume-time {
+    font-size: 14px;
+    color: #80858C;
+    text-align: right;
+}
+
+.resume-aside .info-article-border {
+    padding: 48px 48px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.resume-aside .photo-box-edit {
+    background-color: #F4F7FF;
+    margin-right: 24px;
+}
+
+.resume-aside .photo-box-edit .photo-box-icon {
+    width: 56px;
+    height: 56px;
+    margin: 50px 41px 0;
+    background-color: transparent;
+}
+
+.resume-aside .photo-box-edit .photo-box-text {
+    font-size: 14px;
+    line-height: 19px;
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.resume-aside .info-article-border a {
+    text-decoration: none;
+}
+
+.resume-aside .info-box {
+    padding-left: 24px;
+    flex: auto;
+}
+
+.resume-aside .info-inbox .name {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.45;
+    color: #2B3340;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3px;
+}
+
+.info-box .edit-icon,
+.detailed-info .edit-icon
+{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/ic_edit_blue.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 4px;
+}
+
+.info-box .edit-btn {
+    color: #2369FF;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: none;
+}
+
+.resume-aside .simple-info {
+    color: #80858C;
+    font-size: 14px;
+    padding-bottom: 16px;
+    line-height: 1.5;
+}
+
+.resume-aside .simple-info span::after {
+    content: " | ";
+    color: #E9EAEB;
+    position: relative;
+    top: -1px;
+    padding-left: 8px;
+    margin-right: 8px;
+}
+.resume-aside p{
+    display: flex;
+    align-items: center;
+}
+.resume-aside .detailed-info-inbox p{
+    padding-bottom: 10px;
+}
+.resume-aside .detailed-info .material-symbols-outlined {
+    margin-right: 8px;
+}
+
+.resume-aside .title-wrap {
+    padding: 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.resume-aside .title-wrap h3::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 22px;
+    background: #fb6184;
+    margin-right: 8px;
+    position: relative;
+    top: -1px;
+}
+
+.resume-aside .title-box {
+    display: flex;
+    align-items: center;
+}
+
+.resume-aside .title-wrap h3 {
+    font-size: 22px;
+    position: relative;
+    font-weight: bold;
+    color: #2B3340;
+    display: flex;
+    align-items: center;
+}
+
+.resume-aside .title-wrap p {
+    color: #6A7079;
+    font-size: 16px;
+    padding-top: 1px;
+    padding-left: 6px;
+    padding-bottom: 0px;
+}
+
+.resume-aside .education-txt {
+    font-size: 14px;
+    color: #80858C;
+}
+
+.resume-aside .education-txt span::after {
+    content: "";
+    display: inline-block;
+    content: "|";
+    color: #E9EAEB;
+    position: relative;
+    top: -1px;
+    padding-left: 8px;
+    margin-right: 8px;
+}
+
+.education-content h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.detailed-info button {
+    color: #2369FF;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.detailed-info .add-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/ic_add.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 4px;
+}
+
+
+.resume-aside .all-box {
+    padding: 16px 48px 16px 62px;
+    position: relative;
+    color: #232A35;
+}
+
+.experience-list .experience-content,
+.job-list .job-content {
+    display: flex;
+}
+
+.experience-list .experience-content .experience-title,
+.job-list .job-title,
+.skill-content .skill-title {
+    color: #80858C;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.experience-list .experience-content .experience-txt,
+.job-list .job-txt,
+.skill-content .skill-txt {
+    font-size: 16px;
+}
+
+.experience-title-wrap .experience-title {
+    color: #2B3340;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+    max-width: 76%;
+}
+.experience-title-wrap .experience-title span::after {
+    content: "";
+    display: inline-block;
+    content: "|";
+    font-size: 14px;
+    color: #2B3340;
+    position: relative;
+    top: -2px;
+    padding-left: 8px;
+    margin-right: 8px;
+}
+
+.experience-box .experience-time {
+    font-size: 14px;
+    color: #80858C;
+    padding-top: 10px;
+}
+
+.experience-box .experience-info .info {
+    color: #80858C;
+    padding-top: 8px;
+}
+.experience-info .info span::after {
+    content: "";
+    display: inline-block;
+    content: "|";
+    font-size: 12px;
+    color: #E9EAEB;
+    position: relative;
+    top: -2px;
+    padding-left: 8px;
+    margin-right: 8px;
+}
+
+.add-other {
+    padding: 0 48px 16px;
+}
+
+.add-container {
+    background: #FAFBFD;
+    border-radius: 4px;
+    border: 1px solid #E3E8F0;
+
+}
+
+.add-container .title-wrap {
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid #EBEFF5;
+}
+
+.add-container .title-wrap h4 {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #2B3340;
+}
+
+.add-container .title-wrap .add-title-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/img_addscore.svg);
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.add-content .add-btn {
+    width: 32%;
+    padding: 16px 0;
+    border: 1px solid #DCE2EC;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2369FF;
+    margin-right: 2%;
+    margin-bottom: 8px;
+}
+
+.add-btn .add-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/ic_add.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 4px;
+}
+
+.add-content .add-box {
+    padding: 22px;
+}
+
+.add-content .add-inbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.all-box{
+    position: relative;
+}
+.all-box .edit-btn-box button {
+    width: 34px;
+    height: 18px;
+    padding: 0 8px;
+    border-right: 1px solid #E9F0FF;
+}
+.all-box .edit-btn-box .edit-btn {
+    background: url(../img/ic_edit_blue.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 18px;
+}
+.all-box .edit-btn-box .delete-btn {
+    background: url(../img/ic_trash_blue.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 18px;
+}
+.all-box .edit-btn-box {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(11, 59, 108, 0.05);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+    right: 48px;
+    padding: 4px 0;
+}
+
+/* 編輯個人資料 */
+.edit-container {
+    background: #FAFBFD;
+    padding: 48px;
+}
+.from-edit .from-title {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    color: #2B3340;
+}
+.from-edit .list-box {
+    display: flex;
+    padding-bottom: 24px;
+    align-items: center;
+}
+.from-edit .list-box .list-title {
+    color: #404753;
+    white-space: nowrap;
+    width: 120px;
+    min-width: 120px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.from-edit .list-box .required-icon {
+    color: #FA1E50;
+    margin-left: 4px;
+}
+.edit-container input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #BFC1C5;
+}
+.btn-wrap {
+    padding-top: 16px;
+    text-align: center;
+}
+.btn-wrap .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 4px;
+    margin: 0 8px;
+}
+.btn-wrap .btn.btn-outline {
+    color: #FA1E50;
+    background: #FFF;
+    border: solid 1px #FA3461;
+}
+.btn-wrap .btn.btn-solid {
+    color: #fff;
+    background: #FA1E50;
+    border: solid 1px #FA1E50;
+}
+
+/* 新增/編輯學歷背景 */
+.edit-container .select2-hidden-accessible{
+    height: 40px;
+    padding: 11px;
+    border: 1px solid #BFC1C5;
+    border-radius: 4px;
+}
+
+.from-edit .list-box .list-inbox .line {
+    display: inline-block;
+    padding: 9px 8px 0;
+}
+.from-module .is-radio-label {
+    margin-right: 40px;
+}
+
+/* 新增/編輯工作經驗 */
+.list-box h6{
+    margin-bottom: 0px;
+}
+.checkbox-work{
+    margin-left: 15px;
+}
+
+/* 新增/編輯專業技能 */
+.checkbox-label{
+    margin-right: 30px;
+}
+@media (max-width: 768px) {
+    .edit-container {
+        padding: 8px;
+    }
+}
+@media (max-width: 415px) {
+    .from-edit .list-box {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .aside-row {
+        margin-bottom: 50px;
+        flex-direction: column-reverse;
+    }
+    .col-9, .col-3{
+        width: 100%;
+    }
+    .resume-aside{
+        margin-right: 0px;
+    }
+    .resume-aside .info-article-border {
+        flex-direction: column;
+        padding: 8px 8px;
+    }
+    .resume-aside .info-box {
+        padding: 8px 8px;
+        width: 100%;
+    }
+    .resume-aside .title-wrap {
+        padding: 8px;
+    }
+    .resume-aside .title-box {
+        display: inline;
+    }
+    .resume-aside .all-box {
+        padding: 8px;
+    }
+    .resume-aside .title-wrap p {
+        display: none;
+    }
+    .add-other {
+        padding: 8px;
+    }
+    .add-content .add-inbox {
+        justify-content: space-between;
+    }
+    .add-content .add-btn {
+        width: 47%;
+    }
+    .score-aside {
+        flex-direction: column-reverse;
+    }
+    .all-box .edit-btn-box {
+        right: 16px;
+        top:0px
+    }
+}
+
+
+/* footer */
+
+.footer-station-list {
+    padding: 64px 0;
+    margin: 0px auto 0 auto;
+    background-color: #F2F5F9;
+    width: 100%;
+}
+
+.footer-station-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.footer-station-icons_item-theme-ig {
+    background: url(../img/ic_media_36_ig.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 0px 12px;
+}
+
+.footer-station-icons_item-theme-fb {
+    background: url(../img/ic_media_36_fb.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 0px 12px;
+}
+
+.footer-station-icons_item-theme-youtube {
+    background: url(../img/ic_media_36_youtube.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 0px 12px;
+}
+
+.footer-station-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.footer-station-info_item {
+    margin: 0 8px;
+}
+
+.footer-station-info_copyright {
+    color: #AAADB3;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer-station-info p {
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .footer-station-info {
+        flex-wrap: wrap;
+    }
+
+    .footer-station-info p {
+        padding-top: 10px;
+    }
+
+    .footer-station-info_copyright {
+        padding-top: 18px
+    }
+
+    .footer-station-list {
+        margin: 10 auto;
+    }
+}
+
+.link_sidebar {
+    position: fixed;
+    bottom: 15px; /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
+    right: 15px; /* 與右方的距離 */
+    width: 60px; /* 按鈕寬度 */
+    height: 60px; /* 按鈕高度 */
+    opacity: 0.6; /* 按鈕原始透明度 */
+    z-index: 10;
+    cursor: pointer;
+    }
+    #messenger:hover { /* 滑鼠經過按鈕時 */
+    opacity: 1; /* 透明度 */
+    }
